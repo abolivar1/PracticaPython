@@ -1,4 +1,5 @@
 from random import choice
+from os import system
 
 def elegir_palabra(lista_palabras):
     return choice(lista_palabras)
@@ -56,6 +57,7 @@ def jugar():
             break
 
     if vidas == 0:
+        system("cls")
         print(f"Perdiste. la palbra era {palabra}")
 
 jugar()
